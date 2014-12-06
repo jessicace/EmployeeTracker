@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server" />
+    <title>
+        <%: Page.Title %> - Tracking Employees Working Hours
+    </title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>            
+            <nav>
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="AddEmployee.aspx">Add Employee</a></li>
+                    <li><a href="EmployeeTimesheet.aspx">Add Timesheet</a></li>
+                    <li><a href="Management.aspx">Update Employee</a></li>
+                    <li><a href="Report.aspx">Report</a></li>
+                </ul>
+            </nav>
+            <h1><%: Page.Title %></h1>
+        </header>
+        <div class="body">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <label>&copy; Jessica Claire Edwards</label>
+        </footer>
+    </form>
+</body>
+</html>

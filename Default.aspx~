@@ -1,0 +1,7 @@
+﻿<%@ Page Language="C#" Title="Home Page" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" MasterPageFile="~/MasterPage.master" %>
+
+<asp:Content runat="server" id="BodyContent" ContentPlaceHolderId="MainContent">
+    <div class="bodyContent">
+        Welcome to the Employee Tracking Management System! Click one of the links to begin.
+</div>
+</asp:Content>
